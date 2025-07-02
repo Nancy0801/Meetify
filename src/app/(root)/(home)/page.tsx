@@ -1,13 +1,13 @@
+import MainMenu from '@/components/MainMenu'
+import StatusBar from '@/components/StatusBar'
 import React from 'react'
 
 const Home = () => {
   return (
-    <section className='flex size-full flex-col gap-6 text-white'>
-        <div className='h-[250px] w-full rounded-[20px]'
-        style={{ backgroundImage: `url('/images/hero-background.png')` }} >
-  
-        </div>
-    </section>
+    <div className='flex flex-col gap-32 pt-10 items-center max-md:gap-10 md:flex-row animate-fade-in text-white'>
+      <StatusBar/>
+      <MainMenu />
+    </div>
   )
 }
 
